@@ -19,6 +19,7 @@ Steps to run the application:
    cd.. 
     cd inventory-service-assessment
     ./mvnw clean package -DskipTests
+    cd..
    
     ```
 4. Run the following command to build the docker image
