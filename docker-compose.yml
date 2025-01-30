@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  order-service:
+    container_name: order-service
+    build:
+      context: ./order-service-assessment
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    networks:
+      - microservices-network
+
+  inventory-service:
+    container_name: inventory-service
+    build:
+      context: ./inventoryservice-assessment
+      dockerfile: Dockerfile
+    ports:
+      - "8081:8081"
+    networks:
+      - microservices-network
+
+networks:
+  microservices-network:
+    driver: bridge
