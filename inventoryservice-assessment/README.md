@@ -8,18 +8,15 @@ Technology Stack Used:
 ▪ Docker for containerizing the services
 
 we can access the swagger documentation at http://localhost:8081/swagger-ui.html
+
 Steps to run the application:
 1. Clone the repository
 2. Run the following command to build the application
     ```shell
-     cd order-service-assessment
     ./mvnw clean package -DskipTests
-   cd.. 
-    cd inventory-service-assessment
-    ./mvnw clean package -DskipTests
-   
     ```
 3. Run the following command to build the docker image
     ```shell
-   docker-compose up
+   docker build -t order-service-app .
+   docker run -p 8081:8081 order-service-app
     ```
