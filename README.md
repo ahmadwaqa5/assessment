@@ -1,4 +1,4 @@
-# order-service-assessment
+# -assessment
 Technology Stack Used: 
 ▪ Spring Boot 3.3.4
 ▪ Java 21
@@ -22,7 +22,7 @@ Steps to run the application:
     cd..
    
     ```
-4. Run the following command to build the docker image
+4. Run the following command to run the docker images
     ```shell
    docker-compose up
     ```
