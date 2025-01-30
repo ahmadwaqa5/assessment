@@ -13,10 +13,14 @@ Steps to run the application:
 1. Clone the repository
 2. Run the following command to build the application
     ```shell
+     cd order-service-assessment
     ./mvnw clean package -DskipTests
+   cd.. 
+    cd inventory-service-assessment
+    ./mvnw clean package -DskipTests
+   
     ```
 3. Run the following command to build the docker image
     ```shell
-   docker build -t order-service-app .
-   docker run -p 8080:8080 order-service-app
+   docker-compose up
     ```
