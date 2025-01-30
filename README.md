@@ -11,7 +11,8 @@ we can access the swagger documentation at http://localhost:8080/swagger-ui.html
 
 Steps to run the application:
 1. Clone the repository
-2. Run the following command to build the application
+2. open the terminal 
+3. Run the following command to build the application
     ```shell
      cd order-service-assessment
     ./mvnw clean package -DskipTests
@@ -20,7 +21,7 @@ Steps to run the application:
     ./mvnw clean package -DskipTests
    
     ```
-3. Run the following command to build the docker image
+4. Run the following command to build the docker image
     ```shell
    docker-compose up
     ```
